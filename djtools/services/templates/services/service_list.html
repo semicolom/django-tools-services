@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="services" class="container">
+        <div class="row">
+            {% for service in service_list %}
+                <div class="col-lg-4 col-sm-12 text-center service">
+                    <a href="{% url 'services:detail' service.slug %}" title="{{ service.title }}">
+                        <img class="img-fluid" src="{{ service.image.url }}" alt="{{ service.title }}">
+                        <span class="title">{{ service.title }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

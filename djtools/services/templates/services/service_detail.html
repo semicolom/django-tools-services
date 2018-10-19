@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <span>{{ service.title }}</span>
+                <span>{{ service.subtitle }}</span>
+                <img class="img-fluid" src="{{ service.image.url }}" alt="{{ service.title }}">
+                <p>{{ service.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
