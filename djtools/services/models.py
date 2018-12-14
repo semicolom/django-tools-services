@@ -6,6 +6,7 @@ class AbstractService(models.Model):
     slug = models.SlugField(max_length=255)
     subtitle = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField()
+    icon = models.ImageField(upload_to='services', blank=True, null=True)
     image = models.ImageField(upload_to='services')
     active = models.BooleanField(default=True, db_index=True)
     featured = models.BooleanField(default=False, db_index=True)
