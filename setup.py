@@ -9,11 +9,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-tools-services',
-    version='1.1.0',
+    version='1.1.1',
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
     description='Simple Django app to manage a company services',
     long_description=README,
+    long_description_content_type="text/markdown",
     author='Toni Colom',
     author_email='toni@semicolom.com',
     url='https://github.com/semicolom/django-tools-services',
